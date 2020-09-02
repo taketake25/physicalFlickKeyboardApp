@@ -13,32 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Hyper_Board_Traser-rescue:PWR_FLAG #FLG?
-U 1 1 5F5737B1
-P 9400 3850
-AR Path="/5F5737B1" Ref="#FLG?"  Part="1" 
-AR Path="/5F548F89/5F5737B1" Ref="#FLG0103"  Part="1" 
-F 0 "#FLG0103" H 9400 3945 50  0001 C CNN
-F 1 "PWR_FLAG" H 9400 4030 50  0000 C CNN
-F 2 "" H 9400 3850 50  0000 C CNN
-F 3 "" H 9400 3850 50  0000 C CNN
-	1    9400 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Hyper_Board_Traser-rescue:PWR_FLAG #FLG?
-U 1 1 5F5737B7
-P 9850 3850
-AR Path="/5F5737B7" Ref="#FLG?"  Part="1" 
-AR Path="/5F548F89/5F5737B7" Ref="#FLG0104"  Part="1" 
-F 0 "#FLG0104" H 9850 3945 50  0001 C CNN
-F 1 "PWR_FLAG" H 9850 4030 50  0000 C CNN
-F 2 "" H 9850 3850 50  0000 C CNN
-F 3 "" H 9850 3850 50  0000 C CNN
-	1    9850 3850
-	1    0    0    -1  
-$EndComp
 Text Label 5350 1650 2    60   ~ 0
 r3
 Text Label 5350 1950 2    60   ~ 0
@@ -73,7 +47,7 @@ AR Path="/5F5738A1" Ref="SW?"  Part="1"
 AR Path="/5F548F89/5F5738A1" Ref="SW17"  Part="1" 
 F 0 "SW17" H 10000 2285 50  0000 C CNN
 F 1 "SW_Push" H 10000 2194 50  0000 C CNN
-F 2 "akizukit:SMD_SW" H 10000 2200 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 10000 2200 50  0001 C CNN
 F 3 "~" H 10000 2200 50  0001 C CNN
 	1    10000 2000
 	1    0    0    -1  
@@ -86,7 +60,7 @@ AR Path="/5F5738A7" Ref="SW?"  Part="1"
 AR Path="/5F548F89/5F5738A7" Ref="SW18"  Part="1" 
 F 0 "SW18" H 10000 2635 50  0000 C CNN
 F 1 "SW_Push" H 10000 2544 50  0000 C CNN
-F 2 "akizukit:SMD_SW" H 10000 2550 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 10000 2550 50  0001 C CNN
 F 3 "~" H 10000 2550 50  0001 C CNN
 	1    10000 2350
 	1    0    0    -1  
@@ -99,7 +73,7 @@ AR Path="/5F5738AD" Ref="SW?"  Part="1"
 AR Path="/5F548F89/5F5738AD" Ref="SW16"  Part="1" 
 F 0 "SW16" H 10000 1935 50  0000 C CNN
 F 1 "SW_Push" H 10000 1844 50  0000 C CNN
-F 2 "akizukit:SMD_SW" H 10000 1850 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 10000 1850 50  0001 C CNN
 F 3 "~" H 10000 1850 50  0001 C CNN
 	1    10000 1650
 	1    0    0    -1  
@@ -112,7 +86,7 @@ AR Path="/5F5738B3" Ref="SW?"  Part="1"
 AR Path="/5F548F89/5F5738B3" Ref="SW19"  Part="1" 
 F 0 "SW19" H 10000 2985 50  0000 C CNN
 F 1 "SW_Push" H 10000 2894 50  0000 C CNN
-F 2 "akizukit:SMD_SW" H 10000 2900 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 10000 2900 50  0001 C CNN
 F 3 "~" H 10000 2900 50  0001 C CNN
 	1    10000 2700
 	1    0    0    -1  
@@ -125,7 +99,7 @@ AR Path="/5F5738B9" Ref="SW?"  Part="1"
 AR Path="/5F548F89/5F5738B9" Ref="SW21"  Part="1" 
 F 0 "SW21" H 10500 2285 50  0000 C CNN
 F 1 "SW_Push" H 10500 2194 50  0000 C CNN
-F 2 "akizukit:SMD_SW" H 10500 2200 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 10500 2200 50  0001 C CNN
 F 3 "~" H 10500 2200 50  0001 C CNN
 	1    10500 2000
 	1    0    0    -1  
@@ -138,7 +112,7 @@ AR Path="/5F5738BF" Ref="SW?"  Part="1"
 AR Path="/5F548F89/5F5738BF" Ref="SW22"  Part="1" 
 F 0 "SW22" H 10500 2635 50  0000 C CNN
 F 1 "SW_Push" H 10500 2544 50  0000 C CNN
-F 2 "akizukit:SMD_SW" H 10500 2550 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 10500 2550 50  0001 C CNN
 F 3 "~" H 10500 2550 50  0001 C CNN
 	1    10500 2350
 	1    0    0    -1  
@@ -151,7 +125,7 @@ AR Path="/5F5738C5" Ref="SW?"  Part="1"
 AR Path="/5F548F89/5F5738C5" Ref="SW20"  Part="1" 
 F 0 "SW20" H 10500 1935 50  0000 C CNN
 F 1 "SW_Push" H 10500 1844 50  0000 C CNN
-F 2 "akizukit:SMD_SW" H 10500 1850 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 10500 1850 50  0001 C CNN
 F 3 "~" H 10500 1850 50  0001 C CNN
 	1    10500 1650
 	1    0    0    -1  
@@ -166,7 +140,7 @@ AR Path="/5F5738CC" Ref="SW?"  Part="1"
 AR Path="/5F548F89/5F5738CC" Ref="SW23"  Part="1" 
 F 0 "SW23" H 10500 2985 50  0000 C CNN
 F 1 "SW_Push" H 10500 2894 50  0000 C CNN
-F 2 "akizukit:SMD_SW" H 10500 2900 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 10500 2900 50  0001 C CNN
 F 3 "~" H 10500 2900 50  0001 C CNN
 	1    10500 2700
 	1    0    0    -1  
@@ -179,7 +153,7 @@ AR Path="/5F5738D2" Ref="SW?"  Part="1"
 AR Path="/5F548F89/5F5738D2" Ref="SW15"  Part="1" 
 F 0 "SW15" H 9500 2985 50  0000 C CNN
 F 1 "SW_Push" H 9500 2894 50  0000 C CNN
-F 2 "akizukit:SMD_SW" H 9500 2900 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 9500 2900 50  0001 C CNN
 F 3 "~" H 9500 2900 50  0001 C CNN
 	1    9500 2700
 	1    0    0    -1  
@@ -192,7 +166,7 @@ AR Path="/5F5738D8" Ref="SW?"  Part="1"
 AR Path="/5F548F89/5F5738D8" Ref="SW12"  Part="1" 
 F 0 "SW12" H 9500 1935 50  0000 C CNN
 F 1 "SW_Push" H 9500 1844 50  0000 C CNN
-F 2 "akizukit:SMD_SW" H 9500 1850 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 9500 1850 50  0001 C CNN
 F 3 "~" H 9500 1850 50  0001 C CNN
 	1    9500 1650
 	1    0    0    -1  
@@ -205,7 +179,7 @@ AR Path="/5F5738DE" Ref="SW?"  Part="1"
 AR Path="/5F548F89/5F5738DE" Ref="SW14"  Part="1" 
 F 0 "SW14" H 9500 2635 50  0000 C CNN
 F 1 "SW_Push" H 9500 2544 50  0000 C CNN
-F 2 "akizukit:SMD_SW" H 9500 2550 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 9500 2550 50  0001 C CNN
 F 3 "~" H 9500 2550 50  0001 C CNN
 	1    9500 2350
 	1    0    0    -1  
@@ -218,7 +192,7 @@ AR Path="/5F5738E4" Ref="SW?"  Part="1"
 AR Path="/5F548F89/5F5738E4" Ref="SW13"  Part="1" 
 F 0 "SW13" H 9500 2285 50  0000 C CNN
 F 1 "SW_Push" H 9500 2194 50  0000 C CNN
-F 2 "akizukit:SMD_SW" H 9500 2200 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 9500 2200 50  0001 C CNN
 F 3 "~" H 9500 2200 50  0001 C CNN
 	1    9500 2000
 	1    0    0    -1  
@@ -403,108 +377,8 @@ Text Label 5350 1750 2    60   ~ 0
 r4
 Text Label 7050 2150 0    60   ~ 0
 c1
-Text Label 9850 3850 3    50   ~ 0
-GND
-Text Label 9400 3850 3    50   ~ 0
-Vcc
 Text Label 8750 2800 2    50   ~ 0
 GND
-$Comp
-L Hyper_Board_Traser-rescue:C C?
-U 1 1 5F6D52FC
-P 1950 1250
-AR Path="/5F6D52FC" Ref="C?"  Part="1" 
-AR Path="/5F548958/5F6D52FC" Ref="C?"  Part="1" 
-AR Path="/5F548F89/5F6D52FC" Ref="C7"  Part="1" 
-F 0 "C7" H 1975 1350 50  0000 L CNN
-F 1 "0.1u" H 1975 1150 50  0000 L CNN
-F 2 "akizukit:SMD-2012" H 1988 1100 50  0001 C CNN
-F 3 "" H 1950 1250 50  0000 C CNN
-	1    1950 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Hyper_Board_Traser-rescue:CP C?
-U 1 1 5F6D5302
-P 3050 1250
-AR Path="/5F6D5302" Ref="C?"  Part="1" 
-AR Path="/5F548958/5F6D5302" Ref="C?"  Part="1" 
-AR Path="/5F548F89/5F6D5302" Ref="C10"  Part="1" 
-F 0 "C10" H 3075 1350 50  0000 L CNN
-F 1 "100u" H 3075 1150 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 3088 1100 50  0001 C CNN
-F 3 "" H 3050 1250 50  0000 C CNN
-	1    3050 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Hyper_Board_Traser-rescue:GND #PWR?
-U 1 1 5F6D5308
-P 2500 1450
-AR Path="/5F6D5308" Ref="#PWR?"  Part="1" 
-AR Path="/5F548958/5F6D5308" Ref="#PWR?"  Part="1" 
-AR Path="/5F548F89/5F6D5308" Ref="#PWR0102"  Part="1" 
-F 0 "#PWR0102" H 2500 1200 50  0001 C CNN
-F 1 "GND" H 2500 1300 50  0000 C CNN
-F 2 "" H 2500 1450 50  0000 C CNN
-F 3 "" H 2500 1450 50  0000 C CNN
-	1    2500 1450
-	1    0    0    -1  
-$EndComp
-NoConn ~ 1700 900 
-$Comp
-L Hyper_Board_Traser-rescue:CONN_01X02 P?
-U 1 1 5F6D530F
-P 1000 1050
-AR Path="/5F6D530F" Ref="P?"  Part="1" 
-AR Path="/5F548958/5F6D530F" Ref="P?"  Part="1" 
-AR Path="/5F548F89/5F6D530F" Ref="P3"  Part="1" 
-F 0 "P3" H 1000 1200 50  0000 C CNN
-F 1 "CONN_01X02" V 1100 1050 50  0000 C CNN
-F 2 "akizukit:Connector_EH_2pin" H 1000 1050 50  0001 C CNN
-F 3 "" H 1000 1050 50  0000 C CNN
-	1    1000 1050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1950 1400 1950 1450
-Wire Wire Line
-	3050 1450 3050 1400
-Wire Wire Line
-	1200 1000 1300 1000
-$Comp
-L Hyper_Board_Traser-rescue:C C?
-U 1 1 5F6D5324
-P 3300 1250
-AR Path="/5F6D5324" Ref="C?"  Part="1" 
-AR Path="/5F548958/5F6D5324" Ref="C?"  Part="1" 
-AR Path="/5F548F89/5F6D5324" Ref="C11"  Part="1" 
-F 0 "C11" H 3325 1350 50  0000 L CNN
-F 1 "0.1u" H 3325 1150 50  0000 L CNN
-F 2 "akizukit:SMD-2012" H 3338 1100 50  0001 C CNN
-F 3 "" H 3300 1250 50  0000 C CNN
-	1    3300 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3300 1400 3300 1450
-Wire Wire Line
-	3300 1450 3050 1450
-Connection ~ 3050 1450
-$Comp
-L Switch:SW_SPDT SW?
-U 1 1 5F6D532D
-P 1500 1000
-AR Path="/5F6D532D" Ref="SW?"  Part="1" 
-AR Path="/5F548958/5F6D532D" Ref="SW?"  Part="1" 
-AR Path="/5F548F89/5F6D532D" Ref="SW9"  Part="1" 
-F 0 "SW9" H 1500 1285 50  0000 C CNN
-F 1 "SW_SPDT" H 1500 1194 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1500 1000 50  0001 C CNN
-F 3 "~" H 1500 1000 50  0001 C CNN
-	1    1500 1000
-	1    0    0    -1  
-$EndComp
 $Comp
 L Hyper_Board_Traser-rescue:C C?
 U 1 1 5F6D5333
@@ -514,7 +388,7 @@ AR Path="/5F548958/5F6D5333" Ref="C?"  Part="1"
 AR Path="/5F548F89/5F6D5333" Ref="C12"  Part="1" 
 F 0 "C12" H 5225 1050 50  0000 L CNN
 F 1 "0.1u" H 5225 850 50  0000 L CNN
-F 2 "akizukit:SMD-2012" H 5238 800 50  0001 C CNN
+F 2 "akizukit:SMD-1608" H 5238 800 50  0001 C CNN
 F 3 "" H 5200 950 50  0000 C CNN
 	1    5200 950 
 	0    1    1    0   
@@ -571,7 +445,7 @@ AR Path="/5F548958/5F6D534F" Ref="C?"  Part="1"
 AR Path="/5F548F89/5F6D534F" Ref="C8"  Part="1" 
 F 0 "C8" H 2925 2400 50  0000 L CNN
 F 1 "0.1u" H 2925 2200 50  0000 L CNN
-F 2 "akizukit:SMD-2012" H 2938 2150 50  0001 C CNN
+F 2 "akizukit:SMD-1608" H 2938 2150 50  0001 C CNN
 F 3 "" H 2900 2300 50  0000 C CNN
 	1    2900 2300
 	0    1    1    0   
@@ -629,7 +503,7 @@ AR Path="/5F548958/5F6D536A" Ref="C?"  Part="1"
 AR Path="/5F548F89/5F6D536A" Ref="C9"  Part="1" 
 F 0 "C9" H 2925 3150 50  0000 L CNN
 F 1 "0.1u" H 2925 2950 50  0000 L CNN
-F 2 "akizukit:SMD-2012" H 2938 2900 50  0001 C CNN
+F 2 "akizukit:SMD-1608" H 2938 2900 50  0001 C CNN
 F 3 "" H 2900 3050 50  0000 C CNN
 	1    2900 3050
 	0    1    1    0   
@@ -725,10 +599,6 @@ Wire Wire Line
 Wire Wire Line
 	1250 2350 1250 2650
 NoConn ~ 7050 1550
-Wire Wire Line
-	1700 1100 1950 1100
-Wire Wire Line
-	1950 1450 2500 1450
 NoConn ~ 6450 2750
 NoConn ~ 6350 2750
 $Comp
@@ -746,36 +616,6 @@ F 3 "" H 6650 2900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 1250 2650
-Connection ~ 1950 1100
-Connection ~ 2500 1450
-Wire Wire Line
-	2500 1450 3050 1450
-Connection ~ 3050 1100
-Wire Wire Line
-	3050 1100 3300 1100
-Connection ~ 3300 1100
-Wire Wire Line
-	3300 1100 3400 1100
-$Comp
-L Regulator_Linear:AMS1117-1.5 U?
-U 1 1 5F6D53B2
-P 2500 1100
-AR Path="/5F6D53B2" Ref="U?"  Part="1" 
-AR Path="/5F548958/5F6D53B2" Ref="U?"  Part="1" 
-AR Path="/5F548F89/5F6D53B2" Ref="U3"  Part="1" 
-F 0 "U3" H 2500 1342 50  0000 C CNN
-F 1 "AMS1117-1.5" H 2500 1251 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2500 1300 50  0001 C CNN
-F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 2600 850 50  0001 C CNN
-	1    2500 1100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1950 1100 2200 1100
-Wire Wire Line
-	2500 1450 2500 1400
-Wire Wire Line
-	2800 1100 3050 1100
 $Comp
 L Hyper_Board_Traser-rescue:CONN_01X06 P?
 U 1 1 5F6D53BB
@@ -816,22 +656,8 @@ Text Label 2600 2850 2    50   ~ 0
 GND
 Text Label 2600 2100 2    50   ~ 0
 GND
-Text Label 1200 1450 2    50   ~ 0
-GND
 Text Label 4900 1050 2    50   ~ 0
 3v3
-Text Label 3400 1100 0    50   ~ 0
-3v3
-Text Label 1200 900  2    50   ~ 0
-Vcc
-Wire Wire Line
-	1950 1450 1200 1450
-Connection ~ 1950 1450
-Wire Wire Line
-	1200 1100 1200 1450
-Wire Wire Line
-	1200 900  1200 1000
-Connection ~ 1200 1000
 Text Label 3400 2100 0    50   ~ 0
 3v3
 Text Label 3400 2850 0    50   ~ 0
@@ -882,7 +708,7 @@ AR Path="/5F548958/5F6D53EF" Ref="LS?"  Part="1"
 AR Path="/5F548F89/5F6D53EF" Ref="LS2"  Part="1" 
 F 0 "LS2" H 4870 3646 50  0000 L CNN
 F 1 "Speaker" H 4870 3555 50  0000 L CNN
-F 2 "" H 4700 3450 50  0001 C CNN
+F 2 "akizukit:small_speaker" H 4700 3450 50  0001 C CNN
 F 3 "~" H 4690 3600 50  0001 C CNN
 	1    4700 3650
 	1    0    0    -1  
@@ -913,7 +739,7 @@ AR Path="/5F548958/5F6D53FD" Ref="D?"  Part="1"
 AR Path="/5F548F89/5F6D53FD" Ref="D6"  Part="1" 
 F 0 "D6" V 4400 3750 50  0000 R CNN
 F 1 "DIODE" V 4300 3900 50  0000 R CNN
-F 2 "" H 4350 3550 50  0001 C CNN
+F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 4350 3550 50  0001 C CNN
 F 3 "~" H 4350 3550 50  0001 C CNN
 	1    4350 3550
 	0    -1   -1   0   
@@ -1017,7 +843,7 @@ AR Path="/5F548958/5F6D5432" Ref="J?"  Part="1"
 AR Path="/5F548F89/5F6D5432" Ref="J12"  Part="1" 
 F 0 "J12" H 5250 1200 50  0000 C CNN
 F 1 "Conn_01x01" H 5400 1300 50  0000 C CNN
-F 2 "" H 5100 1250 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5100 1250 50  0001 C CNN
 F 3 "~" H 5100 1250 50  0001 C CNN
 	1    5100 1250
 	-1   0    0    1   
@@ -1032,7 +858,7 @@ AR Path="/5F548958/5F6D5439" Ref="J?"  Part="1"
 AR Path="/5F548F89/5F6D5439" Ref="J9"  Part="1" 
 F 0 "J9" H 4750 1000 50  0000 C CNN
 F 1 "Conn_01x01" H 4900 1100 50  0000 C CNN
-F 2 "" H 4600 1050 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4600 1050 50  0001 C CNN
 F 3 "~" H 4600 1050 50  0001 C CNN
 	1    4600 1050
 	-1   0    0    1   
@@ -1045,7 +871,7 @@ AR Path="/5F548958/5F6D543F" Ref="J?"  Part="1"
 AR Path="/5F548F89/5F6D543F" Ref="J16"  Part="1" 
 F 0 "J16" H 7550 900 50  0000 C CNN
 F 1 "Conn_01x01" H 7700 1000 50  0000 C CNN
-F 2 "" H 7400 950 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 7400 950 50  0001 C CNN
 F 3 "~" H 7400 950 50  0001 C CNN
 	1    7400 950 
 	1    0    0    -1  
@@ -1058,7 +884,7 @@ AR Path="/5F548958/5F6D5445" Ref="J?"  Part="1"
 AR Path="/5F548F89/5F6D5445" Ref="J11"  Part="1" 
 F 0 "J11" H 5100 1300 50  0000 C CNN
 F 1 "Conn_01x01" H 5250 1400 50  0000 C CNN
-F 2 "" H 4950 1350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4950 1350 50  0001 C CNN
 F 3 "~" H 4950 1350 50  0001 C CNN
 	1    4950 1350
 	-1   0    0    1   
@@ -1091,7 +917,7 @@ AR Path="/5F548958/5F6D5458" Ref="J?"  Part="1"
 AR Path="/5F548F89/5F6D5458" Ref="J14"  Part="1" 
 F 0 "J14" H 6700 3900 50  0000 L CNN
 F 1 "Conn_01x06" H 6350 3200 50  0000 L CNN
-F 2 "" H 6750 3600 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 6750 3600 50  0001 C CNN
 F 3 "~" H 6750 3600 50  0001 C CNN
 	1    6750 3600
 	1    0    0    -1  
@@ -1104,7 +930,7 @@ AR Path="/5F548958/5F6D545E" Ref="J?"  Part="1"
 AR Path="/5F548F89/5F6D545E" Ref="J15"  Part="1" 
 F 0 "J15" H 7200 3900 50  0000 L CNN
 F 1 "Conn_01x06" H 6850 3200 50  0000 L CNN
-F 2 "" H 7250 3600 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 7250 3600 50  0001 C CNN
 F 3 "~" H 7250 3600 50  0001 C CNN
 	1    7250 3600
 	1    0    0    -1  
@@ -1141,7 +967,7 @@ AR Path="/5F548958/5F6D5470" Ref="J?"  Part="1"
 AR Path="/5F548F89/5F6D5470" Ref="J13"  Part="1" 
 F 0 "J13" H 5868 3917 50  0000 C CNN
 F 1 "Conn_01x04" H 5868 3826 50  0000 C CNN
-F 2 "" H 5950 3600 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5950 3600 50  0001 C CNN
 F 3 "~" H 5950 3600 50  0001 C CNN
 	1    5950 3600
 	-1   0    0    -1  
@@ -1168,7 +994,7 @@ U 1 1 5F7939AF
 P 4700 2150
 F 0 "J10" H 4618 2367 50  0000 C CNN
 F 1 "Conn_01x02" H 4618 2276 50  0000 C CNN
-F 2 "" H 4700 2150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4700 2150 50  0001 C CNN
 F 3 "~" H 4700 2150 50  0001 C CNN
 	1    4700 2150
 	-1   0    0    -1  
@@ -1185,8 +1011,8 @@ U 1 1 5F7BA83D
 P 2700 4750
 AR Path="/5F7BA83D" Ref="SW?"  Part="1" 
 AR Path="/5F548958/5F7BA83D" Ref="SW?"  Part="1" 
-AR Path="/5F548F89/5F7BA83D" Ref="SW?"  Part="1" 
-F 0 "SW?" H 2700 5035 50  0000 C CNN
+AR Path="/5F548F89/5F7BA83D" Ref="SW24"  Part="1" 
+F 0 "SW24" H 2700 5035 50  0000 C CNN
 F 1 "SW_Push" H 2700 4944 50  0000 C CNN
 F 2 "akizukit:SMD_SW" H 2700 4950 50  0001 C CNN
 F 3 "~" H 2700 4950 50  0001 C CNN
@@ -1199,8 +1025,8 @@ U 1 1 5F7BAC1A
 P 2700 5300
 AR Path="/5F7BAC1A" Ref="SW?"  Part="1" 
 AR Path="/5F548958/5F7BAC1A" Ref="SW?"  Part="1" 
-AR Path="/5F548F89/5F7BAC1A" Ref="SW?"  Part="1" 
-F 0 "SW?" H 2700 5585 50  0000 C CNN
+AR Path="/5F548F89/5F7BAC1A" Ref="SW25"  Part="1" 
+F 0 "SW25" H 2700 5585 50  0000 C CNN
 F 1 "SW_Push" H 2700 5494 50  0000 C CNN
 F 2 "akizukit:SMD_SW" H 2700 5500 50  0001 C CNN
 F 3 "~" H 2700 5500 50  0001 C CNN
@@ -1219,8 +1045,8 @@ U 1 1 5F7E567D
 P 3050 4750
 AR Path="/5F7E567D" Ref="R?"  Part="1" 
 AR Path="/5F548958/5F7E567D" Ref="R?"  Part="1" 
-AR Path="/5F548F89/5F7E567D" Ref="R?"  Part="1" 
-F 0 "R?" V 3130 4750 50  0000 C CNN
+AR Path="/5F548F89/5F7E567D" Ref="R24"  Part="1" 
+F 0 "R24" V 3130 4750 50  0000 C CNN
 F 1 "1k" V 3050 4750 50  0000 C CNN
 F 2 "akizukit:SMD-1608" V 2980 4750 50  0001 C CNN
 F 3 "" H 3050 4750 50  0000 C CNN
@@ -1233,8 +1059,8 @@ U 1 1 5F7E5A4D
 P 3050 5300
 AR Path="/5F7E5A4D" Ref="R?"  Part="1" 
 AR Path="/5F548958/5F7E5A4D" Ref="R?"  Part="1" 
-AR Path="/5F548F89/5F7E5A4D" Ref="R?"  Part="1" 
-F 0 "R?" V 3130 5300 50  0000 C CNN
+AR Path="/5F548F89/5F7E5A4D" Ref="R25"  Part="1" 
+F 0 "R25" V 3130 5300 50  0000 C CNN
 F 1 "1k" V 3050 5300 50  0000 C CNN
 F 2 "akizukit:SMD-1608" V 2980 5300 50  0001 C CNN
 F 3 "" H 3050 5300 50  0000 C CNN
@@ -1247,4 +1073,164 @@ Wire Wire Line
 	3200 4750 3200 5300
 Text Label 3200 5300 0    50   ~ 0
 GND
+Wire Wire Line
+	7200 950  7050 950 
+Text Label 9400 3850 3    50   ~ 0
+3v3
+$Comp
+L Hyper_Board_Traser-rescue:PWR_FLAG #FLG?
+U 1 1 5F5737B1
+P 9400 3850
+AR Path="/5F5737B1" Ref="#FLG?"  Part="1" 
+AR Path="/5F548F89/5F5737B1" Ref="#FLG0103"  Part="1" 
+F 0 "#FLG0103" H 9400 3945 50  0001 C CNN
+F 1 "PWR_FLAG" H 9400 4030 50  0000 C CNN
+F 2 "" H 9400 3850 50  0000 C CNN
+F 3 "" H 9400 3850 50  0000 C CNN
+	1    9400 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Hyper_Board_Traser-rescue:C C?
+U 1 1 5F82502D
+P 2000 1300
+AR Path="/5F82502D" Ref="C?"  Part="1" 
+AR Path="/5F548958/5F82502D" Ref="C?"  Part="1" 
+AR Path="/5F548F89/5F82502D" Ref="C7"  Part="1" 
+F 0 "C7" H 2025 1400 50  0000 L CNN
+F 1 "0.1u" H 2025 1200 50  0000 L CNN
+F 2 "akizukit:SMD-1608" H 2038 1150 50  0001 C CNN
+F 3 "" H 2000 1300 50  0000 C CNN
+	1    2000 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Hyper_Board_Traser-rescue:CP C?
+U 1 1 5F825033
+P 3100 1300
+AR Path="/5F825033" Ref="C?"  Part="1" 
+AR Path="/5F548958/5F825033" Ref="C?"  Part="1" 
+AR Path="/5F548F89/5F825033" Ref="C10"  Part="1" 
+F 0 "C10" H 3125 1400 50  0000 L CNN
+F 1 "100u" H 3125 1200 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 3138 1150 50  0001 C CNN
+F 3 "" H 3100 1300 50  0000 C CNN
+	1    3100 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Hyper_Board_Traser-rescue:GND #PWR?
+U 1 1 5F825039
+P 2550 1500
+AR Path="/5F825039" Ref="#PWR?"  Part="1" 
+AR Path="/5F548958/5F825039" Ref="#PWR?"  Part="1" 
+AR Path="/5F548F89/5F825039" Ref="#PWR01"  Part="1" 
+F 0 "#PWR01" H 2550 1250 50  0001 C CNN
+F 1 "GND" H 2550 1350 50  0000 C CNN
+F 2 "" H 2550 1500 50  0000 C CNN
+F 3 "" H 2550 1500 50  0000 C CNN
+	1    2550 1500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1750 950 
+$Comp
+L Hyper_Board_Traser-rescue:CONN_01X02 P?
+U 1 1 5F825040
+P 1050 1100
+AR Path="/5F825040" Ref="P?"  Part="1" 
+AR Path="/5F548958/5F825040" Ref="P?"  Part="1" 
+AR Path="/5F548F89/5F825040" Ref="P3"  Part="1" 
+F 0 "P3" H 1050 1250 50  0000 C CNN
+F 1 "CONN_01X02" V 1150 1100 50  0000 C CNN
+F 2 "akizukit:Connector_EH_2pin" H 1050 1100 50  0001 C CNN
+F 3 "" H 1050 1100 50  0000 C CNN
+	1    1050 1100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2000 1450 2000 1500
+Wire Wire Line
+	3100 1500 3100 1450
+Wire Wire Line
+	1250 1050 1350 1050
+$Comp
+L Hyper_Board_Traser-rescue:C C?
+U 1 1 5F825049
+P 3350 1300
+AR Path="/5F825049" Ref="C?"  Part="1" 
+AR Path="/5F548958/5F825049" Ref="C?"  Part="1" 
+AR Path="/5F548F89/5F825049" Ref="C11"  Part="1" 
+F 0 "C11" H 3375 1400 50  0000 L CNN
+F 1 "0.1u" H 3375 1200 50  0000 L CNN
+F 2 "akizukit:SMD-1608" H 3388 1150 50  0001 C CNN
+F 3 "" H 3350 1300 50  0000 C CNN
+	1    3350 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1450 3350 1500
+Wire Wire Line
+	3350 1500 3100 1500
+Connection ~ 3100 1500
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 5F825052
+P 1550 1050
+AR Path="/5F825052" Ref="SW?"  Part="1" 
+AR Path="/5F548958/5F825052" Ref="SW?"  Part="1" 
+AR Path="/5F548F89/5F825052" Ref="SW9"  Part="1" 
+F 0 "SW9" H 1550 1335 50  0000 C CNN
+F 1 "SW_SPDT" H 1550 1244 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1550 1050 50  0001 C CNN
+F 3 "~" H 1550 1050 50  0001 C CNN
+	1    1550 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1150 2000 1150
+Wire Wire Line
+	2000 1500 2550 1500
+Connection ~ 2000 1150
+Connection ~ 2550 1500
+Wire Wire Line
+	2550 1500 3100 1500
+Connection ~ 3100 1150
+Wire Wire Line
+	3100 1150 3350 1150
+Connection ~ 3350 1150
+Wire Wire Line
+	3350 1150 3450 1150
+Wire Wire Line
+	2000 1150 2250 1150
+Wire Wire Line
+	2550 1500 2550 1450
+Wire Wire Line
+	2850 1150 3100 1150
+Text Label 1250 1500 2    50   ~ 0
+GND
+Text Label 3450 1150 0    50   ~ 0
+3v3
+Text Label 1250 950  2    50   ~ 0
+Vcc
+Wire Wire Line
+	2000 1500 1250 1500
+Connection ~ 2000 1500
+Wire Wire Line
+	1250 1150 1250 1500
+Wire Wire Line
+	1250 950  1250 1050
+Connection ~ 1250 1050
+Text Label 2250 1150 2    50   ~ 0
+Vcc
+$Comp
+L ume-boshi:AMS1117-1.5 U3
+U 1 1 5F83CDA0
+P 2550 1150
+F 0 "U3" H 2550 1392 50  0000 C CNN
+F 1 "AMS1117-1.5" H 2550 1301 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2550 1350 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 2650 900 50  0001 C CNN
+	1    2550 1150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
