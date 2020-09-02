@@ -1118,20 +1118,6 @@ F 3 "" H 3100 1300 50  0000 C CNN
 	1    3100 1300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Hyper_Board_Traser-rescue:GND #PWR?
-U 1 1 5F825039
-P 2550 1500
-AR Path="/5F825039" Ref="#PWR?"  Part="1" 
-AR Path="/5F548958/5F825039" Ref="#PWR?"  Part="1" 
-AR Path="/5F548F89/5F825039" Ref="#PWR01"  Part="1" 
-F 0 "#PWR01" H 2550 1250 50  0001 C CNN
-F 1 "GND" H 2550 1350 50  0000 C CNN
-F 2 "" H 2550 1500 50  0000 C CNN
-F 3 "" H 2550 1500 50  0000 C CNN
-	1    2550 1500
-	1    0    0    -1  
-$EndComp
 NoConn ~ 1750 950 
 $Comp
 L Hyper_Board_Traser-rescue:CONN_01X02 P?
@@ -1231,6 +1217,21 @@ F 1 "AMS1117-1.5" H 2550 1301 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2550 1350 50  0001 C CNN
 F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 2650 900 50  0001 C CNN
 	1    2550 1150
+	1    0    0    -1  
+$EndComp
+Text Label 9900 3850 3    50   ~ 0
+GND
+$Comp
+L Hyper_Board_Traser-rescue:PWR_FLAG #FLG?
+U 1 1 5F8C9354
+P 9900 3850
+AR Path="/5F8C9354" Ref="#FLG?"  Part="1" 
+AR Path="/5F548F89/5F8C9354" Ref="#FLG?"  Part="1" 
+F 0 "#FLG?" H 9900 3945 50  0001 C CNN
+F 1 "PWR_FLAG" H 9900 4030 50  0000 C CNN
+F 2 "" H 9900 3850 50  0000 C CNN
+F 3 "" H 9900 3850 50  0000 C CNN
+	1    9900 3850
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
