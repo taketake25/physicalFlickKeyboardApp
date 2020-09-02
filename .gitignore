@@ -83,3 +83,11 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
+
+
+fp-info-cache
+sym-lib-table
+*.bak
+*.kicad_pcb-bak
+*.sch-bak
+*-rescue.dcm
