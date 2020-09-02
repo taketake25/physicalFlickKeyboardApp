@@ -877,17 +877,6 @@ Text Label 6450 3700 2    50   ~ 0
 3v3
 Text Label 6050 3700 0    50   ~ 0
 3v3
-$Comp
-L Connector_Generic:Conn_01x04 J2
-U 1 1 5F672161
-P 4600 2050
-F 0 "J2" H 4600 2250 50  0000 C CNN
-F 1 "Conn_01x04" H 4600 1750 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4600 2050 50  0001 C CNN
-F 3 "~" H 4600 2050 50  0001 C CNN
-	1    4600 2050
-	-1   0    0    -1  
-$EndComp
 Text Label 5250 1650 2    50   ~ 0
 button1
 Text Label 5250 1750 2    50   ~ 0
@@ -1067,36 +1056,14 @@ Text Label 10000 2450 2    50   ~ 0
 3v3
 Text Label 10000 2550 2    50   ~ 0
 GND2
-Text Label 10650 3650 0    50   ~ 0
+Text Label 10650 3850 0    50   ~ 0
 3v32
-Text Label 10650 3550 0    50   ~ 0
+Text Label 10650 3750 0    50   ~ 0
 GND22
-Text Label 10000 3550 2    50   ~ 0
+Text Label 10000 3750 2    50   ~ 0
 GND2
-Text Label 10000 3650 2    50   ~ 0
+Text Label 10000 3850 2    50   ~ 0
 3v3
-$Comp
-L Connector_Generic:Conn_01x13 J17
-U 1 1 5F93E5DF
-P 10200 3050
-F 0 "J17" H 10000 3850 50  0000 L CNN
-F 1 "Conn_01x13" H 9800 3800 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x13_P2.54mm_Vertical_SMD_Pin1Left" H 10200 3050 50  0001 C CNN
-F 3 "~" H 10200 3050 50  0001 C CNN
-	1    10200 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x13 J18
-U 1 1 5F941DEC
-P 10450 3050
-F 0 "J18" H 10250 3850 50  0000 L CNN
-F 1 "Conn_01x13" H 10050 3800 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x13_P2.54mm_Vertical_SMD_Pin1Left" H 10450 3050 50  0001 C CNN
-F 3 "~" H 10450 3050 50  0001 C CNN
-	1    10450 3050
-	-1   0    0    -1  
-$EndComp
 Text Label 10850 1450 3    50   ~ 0
 GND22
 Text Label 10400 1450 3    50   ~ 0
@@ -1201,4 +1168,64 @@ Text Label 10750 4300 2    50   ~ 0
 3v3
 Text Label 10750 4500 2    50   ~ 0
 GND2
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5FA72512
+P 4600 2250
+F 0 "J2" H 4700 2200 50  0000 C CNN
+F 1 "Conn_01x02" H 4750 2350 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4600 2250 50  0001 C CNN
+F 3 "~" H 4600 2250 50  0001 C CNN
+	1    4600 2250
+	-1   0    0    1   
+$EndComp
+Text Label 4800 2050 2    50   ~ 0
+dummy2
+Text Label 4800 1950 2    50   ~ 0
+dummy1
+Text Label 10000 3650 2    50   ~ 0
+dummy2
+Text Label 10000 3550 2    50   ~ 0
+dummy1
+Text Label 10650 3650 0    50   ~ 0
+dummy22
+Text Label 10650 3550 0    50   ~ 0
+dummy12
+$Comp
+L Connector_Generic:Conn_01x15 J17
+U 1 1 5FA83732
+P 10200 3150
+F 0 "J17" H 10280 3192 50  0000 L CNN
+F 1 "Conn_01x15" H 10280 3101 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical_SMD_Pin1Left" H 10200 3150 50  0001 C CNN
+F 3 "~" H 10200 3150 50  0001 C CNN
+	1    10200 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x15 J18
+U 1 1 5FA84614
+P 10450 3150
+F 0 "J18" H 10368 4067 50  0000 C CNN
+F 1 "Conn_01x15" H 10368 3976 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical_SMD_Pin1Left" H 10450 3150 50  0001 C CNN
+F 3 "~" H 10450 3150 50  0001 C CNN
+	1    10450 3150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J25
+U 1 1 5FA85470
+P 10950 5350
+F 0 "J25" H 11050 5300 50  0000 C CNN
+F 1 "Conn_01x02" H 11100 5450 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10950 5350 50  0001 C CNN
+F 3 "~" H 10950 5350 50  0001 C CNN
+	1    10950 5350
+	1    0    0    -1  
+$EndComp
+Text Label 10750 5450 2    50   ~ 0
+dummy22
+Text Label 10750 5350 2    50   ~ 0
+dummy12
 $EndSCHEMATC
