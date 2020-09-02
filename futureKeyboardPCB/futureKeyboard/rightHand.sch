@@ -82,91 +82,20 @@ Wire Wire Line
 	8700 2800 8650 2800
 Connection ~ 8650 2800
 Wire Wire Line
-	8450 1600 8600 1600
-$Comp
-L Hyper_Board_Traser-rescue:R R?
-U 1 1 5F55B9B8
-P 8750 1600
-AR Path="/5F55B9B8" Ref="R?"  Part="1" 
-AR Path="/5F548958/5F55B9B8" Ref="R13"  Part="1" 
-F 0 "R13" V 8830 1600 50  0000 C CNN
-F 1 "100" V 8750 1600 50  0000 C CNN
-F 2 "akizukit:SMD-1608" V 8680 1600 50  0001 C CNN
-F 3 "" H 8750 1600 50  0000 C CNN
-	1    8750 1600
-	0    1    1    0   
-$EndComp
-Text Label 8900 1600 0    60   ~ 0
-jy
-Wire Wire Line
 	8300 2350 8300 2450
 Connection ~ 8300 2450
 Wire Wire Line
 	8300 2450 8300 2800
-$Comp
-L Device:R_POT RV?
-U 1 1 5F55B9C2
-P 8450 1750
-AR Path="/5F55B9C2" Ref="RV?"  Part="1" 
-AR Path="/5F548958/5F55B9C2" Ref="RV2"  Part="1" 
-F 0 "RV2" V 8335 1750 50  0000 C CNN
-F 1 "R_POT" V 8244 1750 50  0000 C CNN
-F 2 "akizukit:S_POT_SMD" H 8450 1750 50  0001 C CNN
-F 3 "~" H 8450 1750 50  0001 C CNN
-	1    8450 1750
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8450 1200 8600 1200
-$Comp
-L Hyper_Board_Traser-rescue:R R?
-U 1 1 5F55B9CF
-P 8750 1200
-AR Path="/5F55B9CF" Ref="R?"  Part="1" 
-AR Path="/5F548958/5F55B9CF" Ref="R12"  Part="1" 
-F 0 "R12" V 8830 1200 50  0000 C CNN
-F 1 "100" V 8750 1200 50  0000 C CNN
-F 2 "akizukit:SMD-1608" V 8680 1200 50  0001 C CNN
-F 3 "" H 8750 1200 50  0000 C CNN
-	1    8750 1200
-	0    1    1    0   
-$EndComp
-Text Label 8900 1200 0    60   ~ 0
-jx
-$Comp
-L Device:R_POT RV?
-U 1 1 5F55B9D6
-P 8450 1350
-AR Path="/5F55B9D6" Ref="RV?"  Part="1" 
-AR Path="/5F548958/5F55B9D6" Ref="RV1"  Part="1" 
-F 0 "RV1" V 8335 1350 50  0000 C CNN
-F 1 "R_POT" V 8244 1350 50  0000 C CNN
-F 2 "akizukit:S_POT_SMD" H 8450 1350 50  0001 C CNN
-F 3 "~" H 8450 1350 50  0001 C CNN
-	1    8450 1350
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8300 1350 8300 1750
-Wire Wire Line
-	9000 1350 9000 1750
+Text Label 8600 1550 0    60   ~ 0
+jx2
 Text Notes 8300 1050 0    50   ~ 0
 joy stick
-Wire Wire Line
-	8600 1350 9000 1350
-Wire Wire Line
-	8600 1750 9000 1750
-Wire Wire Line
-	8300 1350 8200 1350
-Wire Wire Line
-	8200 1350 8200 1300
-Connection ~ 8300 1350
 Text Label 8650 2350 2    60   ~ 0
-enter
+enter2
 Text Label 8650 3050 2    60   ~ 0
-back
+back2
 Text Label 8650 2700 2    60   ~ 0
-conv
+conv2
 $Comp
 L Switch:SW_Push SW?
 U 1 1 5F55B9E8
@@ -566,8 +495,6 @@ Connection ~ 2950 1100
 Wire Wire Line
 	2950 1100 3200 1100
 Connection ~ 3200 1100
-Wire Wire Line
-	3200 1100 3300 1100
 $Comp
 L Regulator_Linear:AMS1117-1.5 U?
 U 1 1 5F58975C
@@ -631,12 +558,12 @@ Text Label 1100 1450 2    50   ~ 0
 GND2
 Text Label 10850 950  3    50   ~ 0
 GND2
-Text Label 9000 1750 0    50   ~ 0
-GND2
-Text Label 8200 1300 2    50   ~ 0
-3v3
+Text Label 8850 1400 0    50   ~ 0
+GND22
+Text Label 8700 1450 2    50   ~ 0
+3v32
 Text Label 8300 2350 2    50   ~ 0
-3v3
+3v32
 Text Label 4800 1050 2    50   ~ 0
 3v3
 Text Label 3300 1100 0    50   ~ 0
@@ -718,7 +645,7 @@ F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 4
 	1    0    0    -1  
 $EndComp
 Text Label 4100 3200 2    50   ~ 0
-3v3
+3v32
 $Comp
 L pspice:DIODE D1
 U 1 1 5F604E8A
@@ -745,31 +672,31 @@ Connection ~ 4400 3750
 Text Label 5250 1850 2    50   ~ 0
 spk
 Text Label 4100 4100 2    50   ~ 0
-spk
+spk2
 $Comp
-L LED:WS2812B GND2
+L LED:WS2812B GND22
 U 1 1 5F614148
 P 5800 4550
-F 0 "GND2" H 6144 4596 50  0000 L CNN
+F 0 "GND22" H 6144 4596 50  0000 L CNN
 F 1 "WS2812B" H 6144 4505 50  0000 L CNN
-F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 5850 4250 50  0001 L TNN
+F 2 "akizukit:WS2812B" H 5850 4250 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 5900 4175 50  0001 L TNN
 	1    5800 4550
 	1    0    0    -1  
 $EndComp
 Text Label 5500 4550 2    50   ~ 0
-LEDs
+LEDs2
 Text Label 5800 4850 0    50   ~ 0
-GND
+GND22
 Text Label 5800 4250 2    50   ~ 0
-3v3
+3v32
 $Comp
 L LED:WS2812B D3
 U 1 1 5F61A3C1
 P 6400 4550
 F 0 "D3" H 6744 4596 50  0000 L CNN
 F 1 "WS2812B" H 6744 4505 50  0000 L CNN
-F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 6450 4250 50  0001 L TNN
+F 2 "akizukit:WS2812B" H 6450 4250 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 6500 4175 50  0001 L TNN
 	1    6400 4550
 	1    0    0    -1  
@@ -780,7 +707,7 @@ U 1 1 5F61AB7C
 P 7000 4550
 F 0 "D4" H 7344 4596 50  0000 L CNN
 F 1 "WS2812B" H 7344 4505 50  0000 L CNN
-F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 7050 4250 50  0001 L TNN
+F 2 "akizukit:WS2812B" H 7050 4250 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 7100 4175 50  0001 L TNN
 	1    7000 4550
 	1    0    0    -1  
@@ -791,7 +718,7 @@ U 1 1 5F61B1C9
 P 7600 4550
 F 0 "D5" H 7944 4596 50  0000 L CNN
 F 1 "WS2812B" H 7944 4505 50  0000 L CNN
-F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 7650 4250 50  0001 L TNN
+F 2 "akizukit:WS2812B" H 7650 4250 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 7700 4175 50  0001 L TNN
 	1    7600 4550
 	1    0    0    -1  
@@ -966,7 +893,7 @@ button1
 Text Label 5250 1750 2    50   ~ 0
 button2
 Text Label 8650 3400 2    60   ~ 0
-button1
+button12
 $Comp
 L Switch:SW_Push SW?
 U 1 1 5F69012E
@@ -1005,7 +932,7 @@ Wire Wire Line
 Wire Wire Line
 	9100 3150 9100 3500
 Text Label 8650 3750 2    60   ~ 0
-button2
+button22
 $Comp
 L Switch:SW_Push SW?
 U 1 1 5F692F04
@@ -1044,11 +971,234 @@ Wire Wire Line
 Wire Wire Line
 	9100 3500 9100 3850
 Text Label 9100 3850 0    50   ~ 0
-GND2
+GND22
 Text Label 2100 1100 2    50   ~ 0
 Vcc
 Wire Wire Line
 	7100 950  6950 950 
 Text Label 4400 4300 3    50   ~ 0
+GND22
+Text Label 8850 1800 0    60   ~ 0
+jy2
+$Comp
+L akizukit:joystick U5
+U 1 1 5F8EB763
+P 8600 1800
+F 0 "U5" H 8650 1850 50  0000 R CNN
+F 1 "joystick" H 8750 1750 50  0000 R CNN
+F 2 "akizukit:joyStick" H 8600 1500 50  0001 C CNN
+F 3 "" H 8600 1500 50  0001 C CNN
+	1    8600 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 1450 8700 1550
+Text Label 8850 1900 0    50   ~ 0
+3v32
+$Comp
+L Hyper_Board_Traser-rescue:R R?
+U 1 1 5F8F023B
+P 8500 1400
+AR Path="/5F8F023B" Ref="R?"  Part="1" 
+AR Path="/5F548958/5F8F023B" Ref="R13"  Part="1" 
+F 0 "R13" V 8580 1400 50  0000 C CNN
+F 1 "100" V 8500 1400 50  0000 C CNN
+F 2 "akizukit:SMD-1608" V 8430 1400 50  0001 C CNN
+F 3 "" H 8500 1400 50  0000 C CNN
+	1    8500 1400
+	-1   0    0    1   
+$EndComp
+Text Label 8500 1250 0    50   ~ 0
+GND22
+$Comp
+L Hyper_Board_Traser-rescue:R R?
+U 1 1 5F55B9CF
+P 8850 1550
+AR Path="/5F55B9CF" Ref="R?"  Part="1" 
+AR Path="/5F548958/5F55B9CF" Ref="R12"  Part="1" 
+F 0 "R12" V 8930 1550 50  0000 C CNN
+F 1 "100" V 8850 1550 50  0000 C CNN
+F 2 "akizukit:SMD-1608" V 8780 1550 50  0001 C CNN
+F 3 "" H 8850 1550 50  0000 C CNN
+	1    8850 1550
+	1    0    0    -1  
+$EndComp
+Text Label 10650 2450 0    50   ~ 0
+3v32
+Text Label 10650 2650 0    50   ~ 0
+spk2
+Text Label 10650 2550 0    50   ~ 0
+GND22
+Text Label 10650 2750 0    50   ~ 0
+LEDs2
+Text Label 10650 2850 0    60   ~ 0
+jx2
+Text Label 10650 2950 0    60   ~ 0
+jy2
+Text Label 10650 3050 0    60   ~ 0
+enter2
+Text Label 10650 3150 0    60   ~ 0
+conv2
+Text Label 10650 3250 0    60   ~ 0
+back2
+Text Label 10650 3350 0    60   ~ 0
+button12
+Text Label 10650 3450 0    60   ~ 0
+button22
+Text Label 10000 2850 2    60   ~ 0
+jx
+Text Label 10000 2950 2    60   ~ 0
+jy
+Text Label 10000 2650 2    50   ~ 0
+spk
+Text Label 10000 3350 2    50   ~ 0
+button1
+Text Label 10000 3450 2    50   ~ 0
+button2
+Text Label 10000 2750 2    50   ~ 0
+LEDs
+Text Label 10000 3050 2    60   ~ 0
+back
+Text Label 10000 3150 2    60   ~ 0
+conv
+Text Label 10000 3250 2    60   ~ 0
+enter
+Text Label 10000 2450 2    50   ~ 0
+3v3
+Text Label 10000 2550 2    50   ~ 0
+GND2
+Text Label 10650 3650 0    50   ~ 0
+3v32
+Text Label 10650 3550 0    50   ~ 0
+GND22
+Text Label 10000 3550 2    50   ~ 0
+GND2
+Text Label 10000 3650 2    50   ~ 0
+3v3
+$Comp
+L Connector_Generic:Conn_01x13 J17
+U 1 1 5F93E5DF
+P 10200 3050
+F 0 "J17" H 10000 3850 50  0000 L CNN
+F 1 "Conn_01x13" H 9800 3800 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x13_P2.54mm_Vertical_SMD_Pin1Left" H 10200 3050 50  0001 C CNN
+F 3 "~" H 10200 3050 50  0001 C CNN
+	1    10200 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x13 J18
+U 1 1 5F941DEC
+P 10450 3050
+F 0 "J18" H 10250 3850 50  0000 L CNN
+F 1 "Conn_01x13" H 10050 3800 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x13_P2.54mm_Vertical_SMD_Pin1Left" H 10450 3050 50  0001 C CNN
+F 3 "~" H 10450 3050 50  0001 C CNN
+	1    10450 3050
+	-1   0    0    -1  
+$EndComp
+Text Label 10850 1450 3    50   ~ 0
+GND22
+Text Label 10400 1450 3    50   ~ 0
+3v32
+$Comp
+L Hyper_Board_Traser-rescue:PWR_FLAG #FLG?
+U 1 1 5F948EA2
+P 10850 1450
+AR Path="/5F948EA2" Ref="#FLG?"  Part="1" 
+AR Path="/5F548958/5F948EA2" Ref="#FLG0105"  Part="1" 
+F 0 "#FLG0105" H 10850 1545 50  0001 C CNN
+F 1 "PWR_FLAG" H 10850 1630 50  0000 C CNN
+F 2 "" H 10850 1450 50  0000 C CNN
+F 3 "" H 10850 1450 50  0000 C CNN
+	1    10850 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Hyper_Board_Traser-rescue:PWR_FLAG #FLG?
+U 1 1 5F949177
+P 10400 1450
+AR Path="/5F949177" Ref="#FLG?"  Part="1" 
+AR Path="/5F548958/5F949177" Ref="#FLG0106"  Part="1" 
+F 0 "#FLG0106" H 10400 1545 50  0001 C CNN
+F 1 "PWR_FLAG" H 10400 1630 50  0000 C CNN
+F 2 "" H 10400 1450 50  0000 C CNN
+F 3 "" H 10400 1450 50  0000 C CNN
+	1    10400 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5F9D0287
+P 3500 1450
+AR Path="/5F548F89/5F9D0287" Ref="D?"  Part="1" 
+AR Path="/5F548958/5F9D0287" Ref="D2"  Part="1" 
+F 0 "D2" H 3493 1666 50  0000 C CNN
+F 1 "LED" H 3493 1575 50  0000 C CNN
+F 2 "akizukit:2012LED" H 3500 1450 50  0001 C CNN
+F 3 "~" H 3500 1450 50  0001 C CNN
+	1    3500 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Hyper_Board_Traser-rescue:R R?
+U 1 1 5F9D028D
+P 3700 1250
+AR Path="/5F9D028D" Ref="R?"  Part="1" 
+AR Path="/5F548958/5F9D028D" Ref="R26"  Part="1" 
+AR Path="/5F548F89/5F9D028D" Ref="R?"  Part="1" 
+F 0 "R26" V 3780 1250 50  0000 C CNN
+F 1 "1k" V 3700 1250 50  0000 C CNN
+F 2 "akizukit:SMD-1608" V 3630 1250 50  0001 C CNN
+F 3 "" H 3700 1250 50  0000 C CNN
+	1    3700 1250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3650 1450 3700 1450
+Wire Wire Line
+	3700 1450 3700 1400
+Wire Wire Line
+	3350 1450 3200 1450
+Connection ~ 3200 1450
+Wire Wire Line
+	3200 1100 3700 1100
+$Comp
+L Connector_Generic:Conn_01x04 J21
+U 1 1 5F9D71C3
+P 10950 4400
+F 0 "J21" H 11030 4392 50  0000 L CNN
+F 1 "Conn_01x04" H 11030 4301 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Left" H 10950 4400 50  0001 C CNN
+F 3 "~" H 10950 4400 50  0001 C CNN
+	1    10950 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J22
+U 1 1 5F9D91E0
+P 10950 4900
+F 0 "J22" H 11030 4892 50  0000 L CNN
+F 1 "Conn_01x04" H 11030 4801 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Left" H 10950 4900 50  0001 C CNN
+F 3 "~" H 10950 4900 50  0001 C CNN
+	1    10950 4900
+	1    0    0    -1  
+$EndComp
+Text Label 10750 4600 2    50   ~ 0
+3v3
+Text Label 10750 4400 2    50   ~ 0
+GND2
+Text Label 10750 4800 2    50   ~ 0
+3v32
+Text Label 10750 4900 2    50   ~ 0
+GND22
+Text Label 10750 5000 2    50   ~ 0
+GND22
+Text Label 10750 5100 2    50   ~ 0
+3v32
+Text Label 10750 4300 2    50   ~ 0
+3v3
+Text Label 10750 4500 2    50   ~ 0
 GND2
 $EndSCHEMATC
