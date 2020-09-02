@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BTserialTest</string>
+    <string name="Memos">Memos</string>
+    <string name="Title">Title</string>
+    <string name="Editor">Editor</string>
+    <string name="content_description_one">Back!</string>
+</resources>
