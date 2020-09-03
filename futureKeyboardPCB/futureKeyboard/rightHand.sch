@@ -412,7 +412,7 @@ F 1 "2SC1815" H 1840 2605 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 1850 2575 50  0001 L CIN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 1650 2650 50  0001 L CNN
 	1    1650 2650
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Text Label 1750 1950 0    60   ~ 0
 EN
