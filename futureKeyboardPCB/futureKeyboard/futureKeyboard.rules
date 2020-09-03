@@ -1,0 +1,112 @@
+
+(rules PCB futureKeyboard
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 9929)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.9)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.5)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 250.2 (type default_Power))
+    (clear 50.0 (type smd_smd))
+    (clear 250.2 (type smd_Power))
+    (clear 250.2 (type "kicad_default"_Power))
+    (clear 250.2 (type Power_Power))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-Power" "Via[0-1]_800:400_um" Power
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    Power "Via[0-1]_800:400_um-Power"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    /Sheet5F548957/IO0 /Sheet5F548957/EN /Sheet5F548F88/IO0 /Sheet5F548F88/EN "Net-(D1-Pad2)" "Net-(D1-Pad1)" /Sheet5F548957/LEDs "Net-(D3-Pad2)"
+    "Net-(D4-Pad2)" "Net-(D5-Pad2)" "Net-(D6-Pad1)" "Net-(D6-Pad2)" "Net-(D7-Pad2)" /Sheet5F548F88/LEDs "Net-(D8-Pad2)" "Net-(D10-Pad4)"
+    "Net-(D10-Pad2)" "Net-(J2-Pad2)" "Net-(J2-Pad1)" "Net-(J3-Pad1)" "Net-(J4-Pad1)" /Sheet5F548957/SCL /Sheet5F548957/SDA /Sheet5F548957/CS1
+    /Sheet5F548957/SCK /Sheet5F548957/MOSI /Sheet5F548957/MISO /Sheet5F548957/CS2 "Net-(J10-Pad1)" "Net-(J10-Pad2)" "Net-(J11-Pad1)" "Net-(J12-Pad1)"
+    /Sheet5F548F88/SCL /Sheet5F548F88/SDA /Sheet5F548F88/CS1 /Sheet5F548F88/SCK /Sheet5F548F88/MOSI /Sheet5F548F88/MISO /Sheet5F548F88/CS2 /Sheet5F548957/RXD
+    /Sheet5F548957/TXD /Sheet5F548957/RTS /Sheet5F548957/DTR /Sheet5F548F88/DTR /Sheet5F548F88/RTS /Sheet5F548F88/TXD /Sheet5F548F88/RXD "Net-(Q1-Pad3)"
+    "Net-(Q2-Pad3)" /Sheet5F548957/spk "Net-(Q4-Pad3)" "Net-(Q5-Pad3)" /Sheet5F548F88/spk "Net-(R6-Pad1)" /Sheet5F548957/enter /Sheet5F548957/conv
+    /Sheet5F548957/back /Sheet5F548957/button1 /Sheet5F548957/button2 "Net-(R12-Pad2)" /Sheet5F548957/jx /Sheet5F548957/jy "Net-(R19-Pad1)" /Sheet5F548F88/r1
+    /Sheet5F548F88/r2 /Sheet5F548F88/r3 /Sheet5F548F88/r4 /Sheet5F548F88/button1 /Sheet5F548F88/button2 /Sheet5F548F88/c1 /Sheet5F548F88/c2 /Sheet5F548F88/c3
+    "Net-(U2-Pad32)" "Net-(U2-Pad17)" "Net-(U2-Pad18)" "Net-(U2-Pad19)" "Net-(U2-Pad20)" "Net-(U2-Pad21)" "Net-(U2-Pad22)" "Net-(U4-Pad22)"
+    "Net-(U4-Pad21)" "Net-(U4-Pad20)" "Net-(U4-Pad19)" "Net-(U4-Pad18)" "Net-(U4-Pad17)" "Net-(U4-Pad32)" "Net-(D3-Pad4)" "Net-(R13-Pad1)"
+    /Sheet5F548F88/LEDs2 /Sheet5F548957/LEDs2 /Sheet5F548957/button12 /Sheet5F548957/conv2 /Sheet5F548957/jy2 /Sheet5F548957/button22 /Sheet5F548957/back2 /Sheet5F548957/enter2
+    /Sheet5F548957/jx2 /Sheet5F548957/spk2 /Sheet5F548F88/r23 /Sheet5F548F88/r21 /Sheet5F548F88/c22 /Sheet5F548F88/button22 /Sheet5F548F88/r24 /Sheet5F548F88/r22
+    /Sheet5F548F88/c23 /Sheet5F548F88/c12 /Sheet5F548F88/button21 /Sheet5F548F88/spk2 "Net-(D2-Pad2)" "Net-(D11-Pad2)" /Sheet5F548957/dummy1 /Sheet5F548957/dummy2
+    /Sheet5F548957/dummy22 /Sheet5F548957/dummy12 "Net-(C1-Pad1)" "Net-(C7-Pad1)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Power
+    /Sheet5F548957/Vcc /Sheet5F548957/3v3 /Sheet5F548F88/Vcc /Sheet5F548F88/3v3 "Net-(SW1-Pad1)" "Net-(SW9-Pad1)" /Sheet5F548957/GND2 /Sheet5F548F88/GND
+    /Sheet5F548957/GND22 /Sheet5F548957/3v32 /Sheet5F548F88/3v32 /Sheet5F548F88/GND2
+    (clearance_class Power)
+    (via_rule Power)
+    (rule
+      (width 350.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
