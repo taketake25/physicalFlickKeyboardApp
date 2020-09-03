@@ -621,7 +621,7 @@ AR Path="/5F548F89/5F6D53BB" Ref="P4"  Part="1"
 AR Path="/5F548958/5F6D53BB" Ref="P?"  Part="1" 
 F 0 "P4" H 1400 4100 50  0000 C CNN
 F 1 "CONN_01X06" V 1500 3750 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1400 3750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 1400 3750 50  0001 C CNN
 F 3 "" H 1400 3750 50  0000 C CNN
 	1    1400 3750
 	0    1    1    0   
@@ -1190,18 +1190,11 @@ Text Label 1250 1500 2    50   ~ 0
 GND
 Text Label 3450 1150 0    50   ~ 0
 3v3
-Text Label 1250 950  2    50   ~ 0
-Vcc
 Wire Wire Line
 	2000 1500 1250 1500
 Connection ~ 2000 1500
 Wire Wire Line
 	1250 1150 1250 1500
-Wire Wire Line
-	1250 950  1250 1050
-Connection ~ 1250 1050
-Text Label 2250 1150 2    50   ~ 0
-Vcc
 $Comp
 L ume-boshi:AMS1117-1.5 U3
 U 1 1 5F83CDA0
@@ -1420,4 +1413,6 @@ Text Label 11650 5750 2    50   ~ 0
 GND
 Text Label 11650 6050 2    50   ~ 0
 3v32
+Text Label 1350 1050 2    50   ~ 0
+Vcc
 $EndSCHEMATC

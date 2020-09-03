@@ -495,19 +495,6 @@ Connection ~ 2950 1100
 Wire Wire Line
 	2950 1100 3200 1100
 Connection ~ 3200 1100
-$Comp
-L Regulator_Linear:AMS1117-1.5 U?
-U 1 1 5F58975C
-P 2400 1100
-AR Path="/5F58975C" Ref="U?"  Part="1" 
-AR Path="/5F548958/5F58975C" Ref="U1"  Part="1" 
-F 0 "U1" H 2400 1342 50  0000 C CNN
-F 1 "AMS1117-1.5" H 2400 1251 50  0000 C CNN
-F 2 "akizukit:AZ1086H" H 2400 1300 50  0001 C CNN
-F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 2500 850 50  0001 C CNN
-	1    2400 1100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1850 1100 2100 1100
 Wire Wire Line
@@ -523,7 +510,7 @@ AR Path="/5F548F89/5F5DD4A1" Ref="P?"  Part="1"
 AR Path="/5F548958/5F5DD4A1" Ref="P2"  Part="1" 
 F 0 "P2" H 1300 4100 50  0000 C CNN
 F 1 "CONN_01X06" V 1400 3750 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1300 3750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 1300 3750 50  0001 C CNN
 F 3 "" H 1300 3750 50  0000 C CNN
 	1    1300 3750
 	0    1    1    0   
@@ -568,8 +555,6 @@ Text Label 4800 1050 2    50   ~ 0
 3v3
 Text Label 3300 1100 0    50   ~ 0
 3v3
-Text Label 1100 900  2    50   ~ 0
-Vcc
 Text Label 10400 950  3    50   ~ 0
 Vcc
 Wire Wire Line
@@ -577,9 +562,6 @@ Wire Wire Line
 Connection ~ 1850 1450
 Wire Wire Line
 	1100 1100 1100 1450
-Wire Wire Line
-	1100 900  1100 1000
-Connection ~ 1100 1000
 Text Label 3300 2100 0    50   ~ 0
 3v3
 Text Label 3300 2850 0    50   ~ 0
@@ -961,8 +943,6 @@ Wire Wire Line
 	9100 3500 9100 3850
 Text Label 9100 3850 0    50   ~ 0
 GND22
-Text Label 2100 1100 2    50   ~ 0
-Vcc
 Wire Wire Line
 	7100 950  6950 950 
 Text Label 4400 4300 3    50   ~ 0
@@ -1024,33 +1004,29 @@ Text Label 10650 2850 0    60   ~ 0
 jx2
 Text Label 10650 2950 0    60   ~ 0
 jy2
-Text Label 10650 3050 0    60   ~ 0
-enter2
 Text Label 10650 3150 0    60   ~ 0
 conv2
 Text Label 10650 3250 0    60   ~ 0
 back2
-Text Label 10650 3350 0    60   ~ 0
+Text Label 10650 3550 0    60   ~ 0
 button12
-Text Label 10650 3450 0    60   ~ 0
-button22
 Text Label 10000 2850 2    60   ~ 0
 jx
 Text Label 10000 2950 2    60   ~ 0
 jy
 Text Label 10000 2650 2    50   ~ 0
 spk
-Text Label 10000 3350 2    50   ~ 0
+Text Label 10000 3550 2    50   ~ 0
 button1
-Text Label 10000 3450 2    50   ~ 0
+Text Label 10000 3650 2    50   ~ 0
 button2
 Text Label 10000 2750 2    50   ~ 0
 LEDs
-Text Label 10000 3050 2    60   ~ 0
+Text Label 10000 3250 2    60   ~ 0
 back
 Text Label 10000 3150 2    60   ~ 0
 conv
-Text Label 10000 3250 2    60   ~ 0
+Text Label 10000 3050 2    60   ~ 0
 enter
 Text Label 10000 2450 2    50   ~ 0
 3v3
@@ -1183,13 +1159,13 @@ Text Label 4800 2050 2    50   ~ 0
 dummy2
 Text Label 4800 1950 2    50   ~ 0
 dummy1
-Text Label 10000 3650 2    50   ~ 0
+Text Label 10000 3450 2    50   ~ 0
 dummy2
-Text Label 10000 3550 2    50   ~ 0
+Text Label 10000 3350 2    50   ~ 0
 dummy1
-Text Label 10650 3650 0    50   ~ 0
+Text Label 10650 3450 0    50   ~ 0
 dummy22
-Text Label 10650 3550 0    50   ~ 0
+Text Label 10650 3350 0    50   ~ 0
 dummy12
 $Comp
 L Connector_Generic:Conn_01x15 J17
@@ -1228,4 +1204,26 @@ Text Label 10750 5450 2    50   ~ 0
 dummy22
 Text Label 10750 5350 2    50   ~ 0
 dummy12
+Text Label 10650 3050 0    60   ~ 0
+enter2
+Connection ~ 1100 1000
+Wire Wire Line
+	1100 900  1100 1000
+Text Label 1100 900  2    50   ~ 0
+Vcc
+Text Label 10650 3650 0    60   ~ 0
+button22
+$Comp
+L ume-boshi:AMS1117-1.5 U?
+U 1 1 5F5EE260
+P 2400 1100
+AR Path="/5F548F89/5F5EE260" Ref="U?"  Part="1" 
+AR Path="/5F548958/5F5EE260" Ref="U1"  Part="1" 
+F 0 "U1" H 2400 1342 50  0000 C CNN
+F 1 "AMS1117-1.5" H 2400 1251 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2400 1300 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 2500 850 50  0001 C CNN
+	1    2400 1100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
