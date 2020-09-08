@@ -131,7 +131,7 @@ void printKey(int key){ // 入力キーをinput
       w[1]='a'; 
       wordIndex = 0; 
       output = true;
-    }
+    }else w[1]=0;
 
     switch(key){
       case 1:w[0]=w[1];w[1]=0;break; //とりあえずESCを入力している
@@ -156,6 +156,7 @@ void printKey(int key){ // 入力キーをinput
     }
 
     // 出力
+//    lcd.printf("%c%c",beforew[0],beforew[1]);
     if(output && (beforew[0]!=w[0] || beforew[1]!=w[1])) {lcd.printf("%c%c",w[0],w[1]); SerialBT.print(wordIndex);Serial.println(wordIndex); } // 連続入力を避ける
 //    if(output && (beforew[0]!=w[0] || beforew[1]!=w[1])) {lcd.printf("%c%c",w[0],w[1]); SerialBT.print(w[0]); SerialBT.print(w[1]);} // 連続入力を避ける
 
