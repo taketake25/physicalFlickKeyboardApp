@@ -1,11 +1,11 @@
 G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,(5.1.5)-3*
-G04 #@! TF.CreationDate,2020-09-04T17:35:13+09:00*
-G04 #@! TF.ProjectId,futureKeyboardRight&Base,66757475-7265-44b6-9579-626f61726452,rev?*
+G04 #@! TF.CreationDate,2020-09-25T18:15:40+09:00*
+G04 #@! TF.ProjectId,lefthand,6c656674-6861-46e6-942e-6b696361645f,rev?*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Profile,NP*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (5.1.5)-3) date 2020-09-04 17:35:13*
+G04 Created by KiCad (PCBNEW (5.1.5)-3) date 2020-09-25 18:15:40*
 %MOMM*%
 %LPD*%
 G04 APERTURE LIST*
