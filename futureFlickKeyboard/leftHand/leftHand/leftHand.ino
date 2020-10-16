@@ -1,7 +1,6 @@
 #include <esp_now.h>
 #include <WiFi.h>
 #include <Adafruit_NeoPixel.h>
-#include "BluetoothSerial.h"
 
 #define LEDs 13
 #define button1 32
@@ -26,6 +25,7 @@ Adafruit_NeoPixel pixels(NUMPIXELS, LEDs, NEO_GRB + NEO_KHZ800);
 int lines[4]={0};
 char w[2]={0};
 uint8_t key=0;
+uint8_t slaveMAC[6] = {0x24, 0x0a, 0xc4, 0x11, 0xf8, 0xb1};
 
 
 //{
@@ -46,7 +46,7 @@ uint8_t key=0;
 
 // Global copy of slave
 esp_now_peer_info_t slave;
-#define CHANNEL 3
+#define CHANNEL 0
 #define PRINTSCANRESULTS 0
 #define DELETEBEFOREPAIR 0
 
@@ -164,14 +164,26 @@ void deletePeer() {
 }
 
 void sendData() {
-  const uint8_t *peer_addr = slave.peer_addr;
-  Serial.print("Sending: "); Serial.println(key);
-  esp_err_t result = esp_now_send(peer_addr, &key, sizeof(key));
+//  const uint8_t *peer_addr = slave.peer_addr;
+  const uint8_t *peer_addr = slaveMAC;
+  Serial.print("\nSending: "); Serial.println(key);
+  esp_err_t result = esp_now_send(slaveMAC, &key, sizeof(key));
   Serial.print("Send Status: ");
   if (result == ESP_OK) {
     Serial.println("Success");
-  } else{
-    Serial.println("ESPNOW sendData Error.");
+  } else if (result == ESP_ERR_ESPNOW_NOT_INIT) {
+    // How did we get so far!!
+    Serial.println("ESPNOW not Init.");
+  } else if (result == ESP_ERR_ESPNOW_ARG) {
+    Serial.println("Invalid Argument");
+  } else if (result == ESP_ERR_ESPNOW_INTERNAL) {
+    Serial.println("Internal Error");
+  } else if (result == ESP_ERR_ESPNOW_NO_MEM) {
+    Serial.println("ESP_ERR_ESPNOW_NO_MEM");
+  } else if (result == ESP_ERR_ESPNOW_NOT_FOUND) {
+    Serial.println("Peer not found.");
+  } else {
+    Serial.println("Not sure what happened");
   }
 }
 
@@ -207,7 +219,7 @@ void setup() {
   Serial.print("STA MAC: "); Serial.println(WiFi.macAddress());
   InitESPNow();
   esp_now_register_send_cb(OnDataSent);
-
+    
 
   /* full color LED init */
   #if defined(__AVR_ATtiny85__) && (F_CPU == 16000000) // for setup full color LEDs
@@ -236,18 +248,10 @@ void setup() {
 
 
 void loop() {
-  ScanForSlave();
+//  ScanForSlave();
+  int prevKey = key;
+  key=0;
 
-  if (slave.channel == CHANNEL) { // check if slave channel is defined
-    bool isPaired = manageSlave();
-    if (isPaired) {
-      sendData();
-    } else {
-      Serial.println("Slave pair failed!");
-    }
-  }
-  delay(3000);
-  
   memset(lines,0,sizeof(lines[0])*4);
   //どのボタンが押されているかを認識し、keyに1~12の値として入力
   if(digitalRead(r1)==1) {lines[0]=whichIsPushed(r1);key=lines[0]+3*0;} //あかさ
@@ -255,9 +259,24 @@ void loop() {
   if(digitalRead(r3)==1) {lines[2]=whichIsPushed(r3);key=lines[2]+3*2;} //やらわ
   if(digitalRead(r4)==1) {lines[3]=whichIsPushed(r4);key=lines[3]+3*3;} //〇を〇
 
-  Serial.println(key);
 
-  delay(50); 
+  memcpy(slave.peer_addr, slaveMAC, 6);
+  slave.channel = CHANNEL; // pick a channel
+  slave.encrypt = 0; // no encryption
+//  slaveFound = 1;
+
+  if (key != prevKey && slave.channel == CHANNEL) { // check if slave channel is defined
+    bool isPaired = manageSlave();
+    if (isPaired) {
+      sendData();
+    } else {
+      Serial.println("Slave pair failed!");
+    }
+  }
+  delay(10);
+  
+//  Serial.println(key);
+//  sendData();
 }
 
 int whichIsPushed(int line){ // 左手側の入力キーを認識
