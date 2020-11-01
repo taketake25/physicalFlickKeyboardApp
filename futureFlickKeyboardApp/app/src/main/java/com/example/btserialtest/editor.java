@@ -1,5 +1,4 @@
 package com.example.btserialtest;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -12,7 +11,6 @@ import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.media.AudioManager;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -21,19 +19,15 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
-import java.nio.charset.Charset;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -50,7 +44,7 @@ public class editor extends AppCompatActivity implements Runnable, View.OnClickL
     /* Bluetooth UUID(固定)  ← 一部の既存のアプリで確認することが可能*/
 //    private String MacAddress = "30:AE:A4:02:2C:4A";
     private final UUID MY_UUID = UUID.fromString("00001101-0000-1000-8000-00805f9b34fb");
-    private final String DEVICE_NAME = "Future Flick Keyboard";    /* デバイス名 環境に合わせて変更*/
+    private final String DEVICE_NAME = "Future Flick Keyboard v0";    /* デバイス名 環境に合わせて変更*/
 
     private String receivedMessage = "";
     private String mFileName = "";
@@ -261,6 +255,7 @@ public class editor extends AppCompatActivity implements Runnable, View.OnClickL
                     Log.i(TAG, "value=" + readMsg);
                     if(Integer.parseInt(get) < 64 && Integer.parseInt(get) >= 0){
                         speechText(hira.charAt(Integer.parseInt(get)));
+                        receivedMessage = mInputTextView.getText().toString();
                         receivedMessage = receivedMessage + hira.charAt(Integer.parseInt(get));
                         valueMsg.obj = receivedMessage;
                         mHandler.sendMessage(valueMsg);

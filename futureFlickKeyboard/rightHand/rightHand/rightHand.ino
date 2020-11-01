@@ -7,8 +7,8 @@
 #define button1 32
 #define button2 33
 #define spk 25
-#define enter 17
-#define conv 16
+#define enter 16
+#define conv 17
 #define back 4
 #define jx 34
 #define jy 35
@@ -192,7 +192,7 @@ void printKey(int key){ // 入力キーをinput
     else if(!digitalRead(back)) {/*lcd.fillScreen(0x000000);*/  /*lcd.setCursor(0, 0);*/} // 画面をクリア
     else if(!digitalRead(conv)) {w[0]=' '; w[1]='a';wordIndex=61; output=true;} // スペースを空ける
     else {w[0]=0;}
-    if(output && (beforew[0]!=w[0] || beforew[1]!=w[1])) {SerialBT.print(wordIndex); Serial.print(wordIndex);} // 連続入力を避ける
+    if(output && (beforew[0]!=w[0] && beforew[1]!=w[1])) {SerialBT.print(wordIndex); Serial.print(wordIndex);} // 連続入力を避ける
 //    if(beforew[0]!=w[0] && beforew[1]!=w[1]) {lcd.printf("%c",w[0]); SerialBT.print(w[0]); /*SerialBT.print("あ");*/} // 連続入力を避ける
   }
 
