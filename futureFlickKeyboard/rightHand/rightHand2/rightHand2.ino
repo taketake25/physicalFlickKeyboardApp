@@ -189,8 +189,8 @@ void printKey(int key){ // 入力キーをinput
     }
     if(w[0]=='y'){ // ヤ行の左右はカッコを入力
       switch(w[1]){
-        case 'i': w[0]=0x2A; w[1]=0; break; //w[1]はESCAPE
-        case 'e': w[0]=0x28; w[1]=0; break; //w[1]はESCAPE
+        case 'i': w[0]='('; w[1]=0; break; //w[1]はESCAPE
+        case 'e': w[0]=')'; w[1]=0; break; //w[1]はESCAPE
       }
     }
     if(w[0]=='w'){ // ワ行の入力が変化
@@ -207,6 +207,7 @@ void printKey(int key){ // 入力キーをinput
 
     if(w[0]=='c'){ //濁点や小文字の変更
 //      Serial.println(pushed);
+      char sub = 'l';
       if(!pushed){
         
         switch(beforeInput[0]){
@@ -219,6 +220,7 @@ void printKey(int key){ // 入力キーをinput
               w[0]='t';
               w[1]='u';
               smallW = true;
+              sub = 'x';
               output=true; 
             }else if(beforeInput[1]=='u'){ //っ の場合
               w[0]='d';
@@ -257,7 +259,7 @@ void printKey(int key){ // 入力キーをinput
           bleKeyboard.write(KEY_BACKSPACE); //前回入力した1文字を削除
           delay(5);
           if(smallW==true){ // ヘッダーが存在するときはそれも入力する ex)ltu や lya などの小文字の入力に用いる        
-            bleKeyboard.write('l'); delay(5);
+            bleKeyboard.write(sub); delay(5);
           }
           bleKeyboard.write(w[0]); delay(5);
           bleKeyboard.write(w[1]);

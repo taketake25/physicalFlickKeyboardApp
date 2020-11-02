@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity{
         sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplication(), editor.class);
+                Intent intent = new Intent(getApplication(), editor2.class);
                 intent.putExtra("NAME", "");
                 intent.putExtra("TITLE", "");
                 intent.putExtra("CONTENT", "");
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity{
             public void onItemClick(
                     AdapterView<?> parent, View view, int pos, long id) {
                 // 編集画面に渡すデータをセットし、表示
-                Intent intent = new Intent(MainActivity.this, editor.class);
+                Intent intent = new Intent(MainActivity.this, editor2.class);
                 Log.i("putExtra", "mList:" + mList + ", pos:" + pos);
                 intent.putExtra("NAME", mList.get(pos).get("filename"));
                 intent.putExtra("TITLE", mList.get(pos).get("title"));
@@ -224,7 +224,7 @@ public class MainActivity extends AppCompatActivity{
         Log.i("home", Integer.toString(R.id.home));
         switch (item.getItemId()) {
             case R.id.action_adds:
-                Intent intent = new Intent(getApplication(), editor.class);
+                Intent intent = new Intent(getApplication(), editor2.class);
                 intent.putExtra("NAME","");
                 intent.putExtra("TITLE", "");
                 intent.putExtra("CONTENT", "");
