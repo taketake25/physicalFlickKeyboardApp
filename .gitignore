@@ -94,8 +94,8 @@ sym-lib-table
 
 BleConnectionStatus.cpp
 BleConnectionStatus.h
-BleKeybaord.cpp
-BleKeybaord.h
+BleKeyboard.cpp
+BleKeyboard.h
 KeyboardOutputCallbacks.cpp
 KeyboardOutputCallbacks.have
 keywords.txt
