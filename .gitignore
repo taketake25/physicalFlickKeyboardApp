@@ -91,3 +91,15 @@ sym-lib-table
 *.kicad_pcb-bak
 *.sch-bak
 *-rescue.dcm
+
+BleConnectionStatus.cpp
+BleConnectionStatus.h
+BleKeybaord.cpp
+BleKeybaord.h
+KeyboardOutputCallbacks.cpp
+KeyboardOutputCallbacks.have
+keywords.txt
+library.properties
+README.md
+
+
