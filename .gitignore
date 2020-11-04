@@ -97,7 +97,7 @@ BleConnectionStatus.h
 BleKeyboard.cpp
 BleKeyboard.h
 KeyboardOutputCallbacks.cpp
-KeyboardOutputCallbacks.have
+KeyboardOutputCallbacks.h
 keywords.txt
 library.properties
 README.md
